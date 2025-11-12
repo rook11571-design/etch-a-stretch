@@ -1,28 +1,27 @@
-.grid{
-    border: 1px dotted white;
-    border-radius: 1px;
-    aspect-ratio: 1/1;
-    background-color: black;
-
+.grid {
+  aspect-ratio: 1/1;
+  background-color: black;
 }
-.line{
-    width:100%;
+.line {
+  width: 100%;
 }
-#container{
-    width:800px;
-    height:800px;
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+#container {
+  width: 800px;
+  height: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px dotted white;
+  border-radius: 1px;
 }
-.color{
-    transition: background-color 1000ms ease-in-out;
+.color {
+  transition: background-color 1000ms ease-in-out;
 }
-body{
-    background-color: black;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+body {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
