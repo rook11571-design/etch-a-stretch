@@ -1,5 +1,5 @@
 .grid{
-    border: 1px solid white;
+    border: 1px dotted white;
     border-radius: 1px;
     aspect-ratio: 1/1;
     background-color: black;
@@ -9,8 +9,8 @@
     width:100%;
 }
 #container{
-    width:960px;
-    height:960px;
+    width:800px;
+    height:800px;
     display:flex;
     flex-direction: row;
     justify-content: center;

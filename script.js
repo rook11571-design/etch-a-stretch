@@ -2,12 +2,15 @@ const btn = document.createElement("button");
 btn.textContent = "change tiles";
 let size = 16;
 btn.addEventListener("click", () => {
+    let temp =size;//in case of misinput
     container.remove()
     size = parseInt(window.prompt("What is the size you want?(nxn)"));
     if(size<=100&&size>=1){
      return createDiv(size);
     }
-    
+    alert("The maximum number of the grid is 100x100");
+    size = temp//reset size
+    return createDiv(size);
   })
 document.body.appendChild(btn);
 createDiv = (size)=>{
@@ -51,6 +54,3 @@ const toggleColor = (e) => {
 };
 }
 createDiv(size);
-
-
-
