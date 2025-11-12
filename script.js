@@ -1,6 +1,17 @@
 const btn = document.createElement("button");
 btn.textContent = "change tiles";
+let color = [0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F'];
 let size = 16;
+const makeColor = ()=>{
+    let code = "#";
+    console.log(Math.floor(Math.random()*16))
+    for (let i = 0;i<6;i++){
+        code += color[Math.floor(Math.random()*16)]
+    }
+    console.log(code);
+    return code;
+}
+makeColor();
 btn.addEventListener("click", () => {
     let temp =size;//in case of misinput
     container.remove()
@@ -47,7 +58,7 @@ container.addEventListener("mouseover", (e) => {
 });
 const toggleColor = (e) => {
   if (!e.style.backgroundColor || e.style.backgroundColor == "black") {
-    e.style.backgroundColor = "white";
+    e.style.backgroundColor = makeColor();
   } else {
     e.style.backgroundColor = "black";
   }
