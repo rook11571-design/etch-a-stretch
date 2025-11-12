@@ -3,13 +3,20 @@ changeBtn.textContent = "change tiles";
 let color = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
 let size = 16;
 let mode = 0;
+const resetBtn = document.createElement("button");
+resetBtn.textContent = "Reset";
 const rainbowBtn = document.createElement("button");
 rainbowBtn.textContent = "Rainbow";
 const colorBtn = document.createElement("button");
 colorBtn.textContent = "Colour";
 const colorInput = document.createElement("input");
 colorInput.type = "color";
-
+resetBtn.addEventListener("click",()=>{
+    const grids = document.querySelectorAll(".grid");
+    grids.forEach((grid)=>{
+        grid.style.backgroundColor = "black";
+    })
+})
 colorBtn.addEventListener("click", () => {
   mode = 0;
 });
@@ -49,6 +56,7 @@ changeBtn.addEventListener("click", () => {
   return createDiv(size);
 });
 const btn = document.createElement("div");
+btn.appendChild(resetBtn);
 btn.appendChild(changeBtn);
 btn.appendChild(rainbowBtn);
 btn.appendChild(eraserBtn);
