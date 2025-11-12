@@ -1,0 +1,28 @@
+.grid{
+    border: 1px solid white;
+    border-radius: 1px;
+    aspect-ratio: 1/1;
+    background-color: black;
+
+}
+.line{
+    width:100%;
+}
+#container{
+    width:960px;
+    height:960px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.color{
+    transition: background-color 1000ms ease-in-out;
+}
+body{
+    background-color: black;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
